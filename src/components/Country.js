@@ -10,6 +10,7 @@ function Movie(props) {
     })
   )
 }
+
 {/* <div className="col-3">
 <div className="col">
   <div className="card my-1">
