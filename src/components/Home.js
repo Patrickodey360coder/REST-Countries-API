@@ -27,13 +27,11 @@ function Home() {
   } else if (!isLoaded) {
     return <div>Loading...</div>
   } else {
-    return <div className="row">
-      {
-        countries.map( (country, index) => 
-          <Country {...country} {...index} key={index}/>
-        )
-      }
-    </div>
+    return( 
+      <div className="row">
+        <Country countries={countries} />
+      </div>
+    )
   }
 
 
