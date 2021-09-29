@@ -11,9 +11,6 @@ function Movie(props) {
   )
 }
 
-export default Movie
-
-
 {/* <div className="col-3">
 <div className="col">
   <div className="card my-1">
@@ -26,3 +23,8 @@ export default Movie
   </div>
 </div>
 </div> */}
+
+export default Movie
+
+
+
