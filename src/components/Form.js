@@ -7,8 +7,12 @@ function Form() {
     fetch('https://restcountries.com/v3/all')
       .then( res => res.json())
       .then( data => {
-        setValue(data)
-      })
+        setValue(data);
+      },
+      (error) => {
+        return error;
+      }
+      )
   })
 
   console.log(value)
