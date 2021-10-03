@@ -1,6 +1,18 @@
-import React from 'react'
+import React, {useState, useEffect } from 'react';
 
 function Form() {
+  const [value, setValue] = useState([]);
+  
+  useEffect(() => {
+    fetch('https://restcountries.com/v3/all')
+      .then( (res) => (res.json))
+      .then( data => {
+        setValue(data)
+      })
+  })
+
+  console.log(value)
+
   return (
     <div className="row mb-5 mt-2">
       <div className="col-md-6">
