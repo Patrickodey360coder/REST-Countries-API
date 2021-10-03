@@ -5,7 +5,7 @@ function Form() {
   
   useEffect(() => {
     fetch('https://restcountries.com/v3/all')
-      .then( (res) => (res.json))
+      .then( res => res.json())
       .then( data => {
         setValue(data)
       })
