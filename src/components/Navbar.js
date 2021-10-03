@@ -2,9 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 
 const NavStyle = styled.div`
--webkit-box-shadow: 0px 4px -6px #222;
--moz-box-shadow: 0px 1px -6px #222;
-box-shadow: 0px 1px 1px #de1dde;
+-webkit-box-shadow: 0px 4px -6px grey;
+-moz-box-shadow: 0px 1px -6px grey;
+box-shadow: 0px 1px 1px grey;
 `;
 
 function Navbar() {
@@ -18,7 +18,7 @@ function Navbar() {
                 <h3>Where in the world?</h3>
               </div>
               <div className="col text-end">
-                <h5>Dark Mood</h5>
+                <h5>Dark Mode</h5>
               </div>
             </div>
         </div> 

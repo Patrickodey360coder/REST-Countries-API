@@ -9,12 +9,12 @@ function Movie(props) {
       <div className="col-3" key={index}>
         <div className="col">
           <div className="card my-1">
-            <img src={country.flags[0]} className="card-img-top" alt="name" />
+            <img src={country.flags[1]} className="card-img-top" alt="name" />
             <div className="card-body">
               <h6 className="card-title">{country.name.common}</h6>
               <p className="card-subtitle"><b>Population</b>: {country.population.toLocaleString()}</p>
               <p className="card-text"><b>Region</b>: {country.region}</p>
-              <p className="card-text"><b>Capital</b>:{country.capital}</p>
+              <p className="card-text"><b>Capital</b>: {country.capital}</p>
           </div>
           </div>
         </div>
