@@ -2,12 +2,14 @@ import React, { useEffect, useState } from 'react'
 import Country from './Country';
 
 function Home() {
+  const api1 = "https://www.anapioficeandfire.com/api/books";
+  const api2 = "https://restcountries.com/v3/all";
   const [error, serError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
   const [countries, setCountries] = useState([]);
 
   useEffect(() => {
-    fetch('https://restcountries.com/v3/all')
+    fetch(api2)
       .then(res => res.json())
       .then((data) => {
         setIsLoaded(true);
@@ -19,7 +21,6 @@ function Home() {
       }
       )
   }, []);
-  console.log(countries)
 
 
   if (error) {
