@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Country from './Country';
 
+
 function Home() {
   const api2 = "https://restcountries.com/v3/all";
   const [error, serError] = useState(null);
